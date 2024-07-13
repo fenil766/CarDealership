@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .form{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            backdrop-filter: blur(1);
+          }
+          .form{
+            backdrop-filter: blur(21px);
+            position: absolute;
+            bottom: 4%;
+            width:60%;
+            height:90%; 
+            left: 5%;
+            right: 5%;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius:20px;
+            border: 0.1px solid rgba(255, 255, 255, .5);
+          }
+          .fm{
+            position: relative;
+          }
+          label{
+            color: white;
+          }
+          input{
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .5);
+            padding: 10px;
+            width: 100%;
+            height:35px;
+            margin-top:10px; 
+            font-size:15px;
+            font-weight:bold;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+          }
+          select{
+            padding: 10px;
+            width: 101.7%;
+            height:60px;
+            margin-top:15px; 
+            font-size:15px;
+            font-weight:bold;
+            border-radius: 10px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .5);
+            color: whitesmoke;
+          }
+          option{
+            color:black;
+          }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="fm">
+        <img src="https://images.unsplash.com/photo-1665154589845-290ad4ec07b3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="height:1000px; width:100%;">
+       <div  class="form" >
+       <form action="" style="margin:50px">
+         <hr style="visibility: hidden;">
+         <div style="text-align:center; font-family:DM Serif Display;color:#BD9831;font-size: 28px;">
+           Test Drive
+         </div>
+         <hr style="visibility: hidden;">
+         <hr style="color: white;">
+         <hr style="visibility: hidden;">
+         <form  method="get" style="height:400px; width:300px;font-size:14px;font-weight:bold;">
+           <hr style="visibility: hidden;">
+           <label for="name">Name:</label>
+           <br>
+           <input type="text" id="name" name="name" placeholder=" Enter Your Name" style="color:whitesmoke" required>
+           <br>
+           <hr style="visibility: hidden;">
+           
+       
+           <label for="contactNumber">Contact Number:</label>
+           <br>
+           <input type="tel" id="contactNumber" name="contactNumber" placeholder=" Enter number" style="" required>
+           <br>
+           <hr style="visibility: hidden;">
+       
+           <label for="email">Email:</label>
+           <br>
+           <input type="email" id="email" name="email" placeholder=" Enter Your Email" style="" required>
+           <br>
+           <hr style="visibility: hidden;">
+       
+           <label for="email">Select Modal:</label>
+           <br>
+           <select name="" id="" >
+             <option value="select">select</option>
+             <option value="A 200">A 200</option>
+             <option value="A 200">Mercedes Maybach S-Class</option>
+             <option value="A 200">Mercedes Maybach S-Class</option>
+             <option value="A 200">E-Class LWB</option>
+             <option value="A 200">EQB</option>
+             <option value="A 200">GLC</option>
+             <option value="A 200">Mercedes-Maybach GLS</option>
+             <option value="A 200">GLE Coupé</option>
+             <option value="A 200">GLS</option>
+             <option value="A 200">Mercedes-AMG A 45 S 4MATIC+</option>
+             <option value="A 200">Mercedes-AMG SL Roadster</option>
+             
+           </select>
+           <br>
+           <hr style="visibility: hidden;">
+       
+           <label for="email">Select Your nearest City :</label>
+           <br>
+           <select name="" id="" >
+             <option value="select">select</option>
+             <option value="Ahmedabad">Ahmedabad</option>
+             <option value="Surat">Surat</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Hyderabad">Hyderabad</option>
+             <option value="Bengaluru">Bengaluru</option>
+             <option value="Kolkata">Kolkata</option>
+             <option value="Lucknow">Lucknow</option>
+             <option value="Chennai">Chennai</option>
+             <option value="Bhopal">Bhopal</option>
+           </select>
+           <br>
+           <hr style="visibility: hidden;">
+           
+
+           <label for="email">Choose Date:</label>
+           <br>
+           <input type="date"id="Test_DatetimeLocal"min="2015-01-01"max="2025-12-31"step="1" required>
+           <br>
+           <br>
+           <hr style="visibility: hidden;">
+           <hr style="color: white;">
+          <div style="text-align: center;">
+           <input class="button" type="submit" value="Submit" style="padding:10px;background-color:palevioletred;border-radius:50px;color:white;font-size:10px;font-weight:bold;width:100px; border:none">
+          </div>
+          <hr style="visibility: hidden;">
+       </form>
+       <hr style="visibility: hidden;">
+       </form>
+       </div>
+       </div>
+       <hr style="visibility: hidden;">
+    </div>
+</body>
+</html>

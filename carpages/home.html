@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        ::-webkit-scrollbar{
+            width: 14px;
+            height: 10px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 15px;
+    
+          }
+           
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: gray; 
+            border-radius: 20px;
+          }
+          
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: black; 
+          }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nn{
+            margin-left: 38%;
+            margin-right: 35%;
+        }
+        #nav{
+            width: 100%;
+            height:80px;
+            background-color: black;
+        }
+        #logo{
+            height: 60px;
+            width:60px;
+            margin-left: 70px;
+        }
+        .detail{
+            width: 33.33%;}
+        #title{
+            font-size: 25px;
+            color:white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #title2{
+            font-size: 14px;
+            color:rgb(187, 187, 187);
+            padding-left: 250px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #icon{
+            color: rgb(187, 187, 187);
+            font-size: 18px;
+            padding-left: 300px;
+            justify-content: center;
+        }
+        #nav2{
+            
+            width: 100%;
+            height:50px;
+            background-color: black;
+        }
+        #home{
+            color:rgb(187, 187, 187);
+            font-size:20px;
+            padding-left: 90px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        #home:hover{
+            color: white;
+        }
+        #model{
+            color:rgb(187, 187, 187);
+            font-size: 20px;
+            padding-left: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        #model:hover{
+            color:white;
+        }
+        #services{
+            color:rgb(187, 187, 187);
+            font-size: 20px;
+            padding-left: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        #services:hover{
+            color:white;
+        }
+        #img{
+            width:100%;
+            height:800px;
+            
+        }
+        #img_b{
+            top:40%;
+            left:90px;
+            position: absolute;
+        }
+        #img_t{
+            font-size: 50px;
+            color:white;
+            font-family: 'Times New Roman';
+        
+        }
+        #img_t2{
+            font-size:18px;
+            color: rgb(187, 187, 187);
+            font-family: 'Times New Roman';            
+        }
+        #avilable{
+            height:270px; width:450px;
+        }
+        #div{
+            height:auto;
+            width:100%;
+            background-color: #262626;
+        }
+        button:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        @media only screen and (max-width:572px){
+            #nav{
+                width: 100vw;
+                overflow-x: hidden;
+                height:20vw;
+                background-color: black;
+            }
+            #logo{
+                height: 10vw;
+                width:10vw;
+                margin-left: -2vw;
+                overflow: hidden;
+            }
+            #title{
+                font-size: 4vw;
+                color:white;
+                margin-left: -3vw;
+                font-family: 'Times New Roman', Times, serif;
+                overflow: hidden;
+            }
+            #title2{
+                font-size: 0px;
+                color:rgb(187, 187, 187);
+                padding-left: 0px;
+                font-weight: bold;
+                visibility: hidden;
+                overflow: hidden;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #icon{
+                color: rgb(187, 187, 187);
+                font-size: 0px;
+                padding-left: 0px;
+                visibility: hidden;
+                overflow: hidden;
+                justify-content: center;
+            }
+            #nav2{
+                width: 76vw;
+                margin-right: 76vw;
+                height:10vw;
+                background-color: black;
+                overflow: hidden;
+
+            }
+            #home{
+                color:rgb(187, 187, 187);
+                font-size:7vw;
+                padding-left: 2vw;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            #model{
+                color:rgb(187, 187, 187);
+                font-size: 7vw;
+                padding-left: 2vw;
+                overflow: hidden;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            #services{
+                color:rgb(187, 187, 187);
+                font-size: 7vw;
+                padding-left: 2vw;
+                overflow: hidden;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+            #img{
+                width:76vw;
+                height:76vw;
+                overflow: hidden;
+                position: absolute;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="nav">
+        <ul class="nav" >
+            <li class="nav-item" >
+                <a href="#" class="nav-link pt-3"><img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/1024px-Mercedes-Logo.svg.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link pt-4" id="title">Mercedes-Benz.</a>
+            </li>
+            <li class="nav-item pt-4">
+                <a href="#" id="title2" class="nav-link">DC FAST CHARGING FACILITIES UPTO 50 KW AVAILABLE AT SELECT OUTLETS</a>
+            </li>
+            <li class="nav-item pt-4">
+                <a href="#" id="icon"><i class="fa content" >&#xf095;  +88 9988776655</i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid" id="nav2">
+        <ul class="nav" id="nn">
+            <li class="nav-item pt-1">
+                <a href="#" id="home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item pt-1">
+                <a href="model.html" id="model"  class="nav-link">Models</a>
+            </li>
+            <li class="nav-item pt-1">
+                <a href="#" id="services"  class="nav-link">Services</a>
+            </li>
+        </ul>
+    </div>
+    <div style="position: relative;">
+        <img id="img" src="https://www.mercedes-benz.co.in/content/india/en/passengercars/_jcr_content/root/responsivegrid/simple_stage_1564354_1682158709.component.damq5.3409408367860.jpg/ProductStill_tif_original.jpg" alt="" >
+        <div id="img_b">
+        <div id="img_t">More than a car</div>
+        <div class="pt-4" id="img_t2">A Mercedes-Benz.</div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" style="margin-top:90px;margin-bottom:90px;">
+        <div>
+            <table style=" width:100%; ">
+                <th>
+                    <td style="font-size:30px; font-family: 'Times New Roman'; text-align:center ">About us</td>
+                </th>
+                <tr>
+                    <td class="detail" style="font-family:'Lemon', serif ; text-align:center; font-size:20px;">1 million+
+                        <span style="font-size:17px; text-align:center; font-family: 'Tajawal', sans-serif; display:block;">Vehicles sold annually</span>
+                    </td>
+                    <td class="detail" >
+                        <span  style="display:block; font-family: 'Lemon', serif; text-align:center; margin-top:10px; margin-bottom:20px; font-size:21px">Agile, new-age and future-ready</span>
+                        <span style="display: block; font-family: 'Tajawal', sans-serif; text-align:center; font-size:16px">Mercedes Benz is a household name in the automotive industry, 
+                        synonymous with luxury, class, and sophistication.
+                        With a rich history dating back to the late 1800s,
+                        the brand has consistently been at the forefront  
+                        of automotive engineering and design, setting the
+                        standard for luxury vehicles.</span>
+                    </td>
+                    <td class="detail" style="font-family: 'Lemon', serif; font-size:20px; text-align:center;">1,70,000+ 
+                        <span style="display: block; font-family: 'Tajawal', sans-serif; font-size:17px">Collective workforce strength</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <video width="100%" height="100%"  controls>
+            <source src="mervedio.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div class="container-fluid" style="display: flex;margin-top:120px;margin-bottom:120px">
+        <div><img class="pl-5" src="https://www.mercedes-benz.co.in/content/india/en/passengercars/_jcr_content/root/responsivegrid/banner_teaser.component.damq6.3401330511688.png/5390497_EQ_Ranges_Additionals_M01_v04_MLC_FinalArt.png" id="avilable"  alt=""></div>
+        <div class="pt-3" style="font-size: 38px; padding-left:50px; font-family: 'Times New Roman';">Buy a new car online <br><span style="font-size:18px; font-family:'Times New Roman', Times, serif">Your way to your dream car. It's just a few steps to your Mercedes-Benz. Convenient and possible from anywhere. Fast. Easy. Secure.</span>
+        <br><span>  <button style="font-size: 17px; padding:10px;  background-color:#0078D6; border:2px solid #0078D6; border-radius:10px; font-family: 'Times New Roman';"> <a href="model.html" style="text-decoration:none; color:white;">Find available cars</a></button></span></div>
+    </div>
+    <div class="mt-5" style="background-color: #f0f0f0;">
+        <hr style="visibility: hidden;">
+        <div class="pl-4 pr-4" style="margin-top:50px;">
+            <p style="font-size: 35px;font-weight:bold;font-family:'Times New Roman', Times, serif; padding-left:50px">Sustainability,</p>
+            <p style="font-size:22px;font-family:EB Garamond Serif;font-weight:normal; padding-left:50px">Our roadmap  to Net Zero</p>
+            <p style="font-size:22px;font-family:EB Garamond Serif;font-weight:normal; padding-left:50px">We are making responsible choices. By prioritising sustainable  mobility, safety, emission reduction and use of eco-friendly <br> materials, we are driving meaningful change.</p>
+            <hr style="visibility: hidden;">
+            <div>
+                <img class="pb-4 pt-3" src="https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%; height:100%;" alt="">
+            </div>
+        </div>
+        <hr style="visibility: hidden;">
+    </div>
+    <div id="accordin" class="pt-5">
+        <div class="card" style="border:2px solid white; padding-left:90px; padding-right:90px">
+            <div class="card-header" style="background-color: white;">
+                <a href="#collapse" class="card-link" style="background-color: white; color:black; text-decoration:none; font-size:22px; font-family:'Times New Roman', Times, serif;" data-toggle="collapse">Legal disclaimers and annotations <span class="dropdown-toggle"></span></a>
+            </div>
+            <div id="collapse" class="collapse" data-parent="#accordin">
+                <div class="card-body" style=" color:#868686;  font-size:19px;font-family:EB Garamond Serif;">The prices specified herein are indicative and may not be final. The indicated price may differ due to purchase of any additional accessories, parts or products, services that <br> may be availed by the customer, discounts offered, change in government taxes, duties, fees or levies, change of state of registration etc. Mercedes- Benz India or the Authorised <br> Franchise Partner shall not be responsible or liable to compensate for the difference in the prices due to aforesaid reasons or any reason beyond the control of Mercedes-Benz <br> India or the Authorised Franchise Partner. Actual colour of the vehicle may differ from those shown in pictures. While Mercedes-Benz India tries to make sure that all information <br> provided herein is accurate, we shall not be responsible for typographical and other errors (e.g., data transmission) that may appear on the site. If the posted price (including <br> finance and lease payments) for a vehicle is incorrect, Mercedes-Benz India will endeavor to provide you with the correct prices as soon as we become aware of the error. In the <br> event a vehicle is priced incorrectly, Mercedes-Benz India shall have the right to refuse or cancel any orders placed for the vehicle presented with the incorrect price. In addition, <br> vehicle prices are subject to change and all vehicles are subject to prior sale and may not be available when you are ready to purchase.</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5" id="div">
+        <div class="pt-5" style="font-size:30px; padding-left:90px; font-weight:bold; color:white; font-family:'Times New Roman', Times, serif;">BOOK A TEST DRIVE</div>
+        <div style="font-family: 'Times New Roman', Times, serif; font-size:14px; color:white; padding-left:90px">Please fill the details below to book your THE BMW M340i xDRIVE SHADOW test <br> drive appointment.</div>
+        <div class="row pt-5">
+            <div class="col-sm-6">
+                <form method="get"style="margin-left: 90px;">
+                <div style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius:15px;">
+                    <div class="form-group">
+                      <label class="pl-3" style="color:white; font-weight:bold;" for="Select Model" >Select Model</label>
+                        <select class="form-select" style="background-color: #262626; color:white; border:2px solid #262626">
+                        <optgroup>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >E-Class Cabriolet</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >A-Class Hatchback</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Mercedes-Mybach GLS</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >EQE SUV</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >S-Class</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >E-Class Limousine LWB</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >EQS Limousine</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >A-Class Limousine</option>
+                        </optgroup>
+                        </select>
+                        <hr class="ml-3 mr-3" style="color: white; " >
+                    </div>
+
+                </div>
+
+                <div  style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:15px;">
+                    <div class="form-group mt-4">
+                      <label class="pl-3" style="color:white; font-weight:bold " for="Select Model">Select Branch</label>
+                        <select class="form-select" style="background-color: #262626; color:white; border:2px solid #262626">
+                        <optgroup>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Eminent Cars Surat</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Landmark Cars</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Benchmark Cars</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Jolly Moters</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Emerals Motors</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Arihant Consultancy</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Navjivan Motors</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >A-Class Ahemdabad</option>
+                        </optgroup>
+                        </select>
+                        <hr class="ml-3 mr-3" style="color: white; " >
+                    </div>
+                </div>
+
+                    <div class="form-group mt-4" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);border-radius:15px;">
+                      <label class="pl-3" style="color:white; font-weight:bold " for="Select Model">Solution</label>
+                        <select class="form-select" style="background-color: #262626; color:white; border:2px solid #262626">
+                        <optgroup>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >--Select--</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Mr.</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Mrs.</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Ms.</option>
+                            <option style="color:white; font-family:'Times New Roman', Times, serif" >Dr.</option>
+                        </optgroup>
+                        </select>
+                        <hr class="ml-3 mr-3" style="color: white; " >
+                        <label for="fname" class="pl-3" style="color:white; font-weight:bold ">First Name</label><br>
+                        <input type="text" class="ml-3" placeholder="Enter First Name" style="background-color:#262626; width:90%; color:white; border:2px solid #262626">
+                        <hr class="ml-3 mr-3" style="color: white; " >
+
+                        <label for="lnamre" class="pl-3" style="color:white; font-weight:bold ">Last Name</label><br>
+                        <input type="text" class="ml-3" placeholder="Enter Last Name" style="background-color:#262626; width:90%; color:white; border:2px solid #262626">
+                        <hr class="ml-3 mr-3" style="color: white; " >
+
+                        <label for="email" class="pl-3" style="color:white; font-weight:bold ">Email <address></address></label><br>
+                        <input type="email" class="ml-3" placeholder="Enter email" style="background-color:#262626; width:90%; color:white; border:2px solid #262626">
+                        <hr class="ml-3 mr-3" style="color: white; " >
+
+                        <label for="call" class="pl-3" style="color:white; font-weight:bold ">Mobail Number <address></address></label><br>
+                        <input type="number" class="ml-3" placeholder="Enter email" style="background-color:#262626; width:90%; color:white; border:2px solid #262626">
+                        <hr class="ml-3 mr-3" style="color: white; " >
+                    </div>
+
+                <div>
+                    <div class="form-group mt-4" style="display: flex;">
+                        <input type="checkbox" name="" id="">
+                        <div class="pl-4" style="color:white; font-family:'Times New Roman', Times, serif; font-size:19px"> Interested in Mercedes Financial Services' Plan and Offers.</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="form-group mt-4" style="display: flex;">
+                        <input type="checkbox" name="" id="">
+                        <div class="pl-4" style="color:white; font-family:'Times New Roman', Times, serif; font-size:19px"> I Accept the Terms & Conditions.</div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pb-5" style="padding-left: 90px;">
+                    <input type="submit" value="BOOK A TEST DRIVE" style=" width:90%;color:white; padding:10px; background-color:#262626; font-weight:bold; border:4px solid white" name="" id="">
+                </div>
+            </form>
+            </div>
+            <div class="col-sm-6">
+                <img src="photo1.png" style="width:90%; margin-top:100px" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="width:100%; height:auto; background-color:black; overflow:hidden;">
+        <div class="row">
+            <div class="col-sm-2">
+                <div style="color:white; font-weight:bold; font-size:20px; padding-left:60px; padding-top:100px; font-family:'Times New Roman', Times, serif">Buy vehicle</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:60px;">Pre-owners Cars</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:60px;">Find a new car</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:14px; padding-left:60px;">Configure your car</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:60px;">All brochures</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:60px;">Model overview</div>
+            </div>
+            <div class="col-sm-2">
+                <div style="color:white; font-weight:bold; font-size:20px; padding-left:50px; padding-top:100px; font-family:'Times New Roman', Times, serif">Buying Guide</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Book a test drive</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Nearest Showroom</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Finance</div>
+            </div>
+            <div class="col-sm-2">
+                <div style="color:white; font-weight:bold; font-size:20px; padding-left:50px; padding-top:100px; font-family:'Times New Roman', Times, serif">Customer services</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Book a service appointment</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Owner's Manuals</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:14px; padding-left:50px;">Grievances Redressal mechanism</div>
+            </div>
+            <div class="col-sm-2">
+                <div style="color:white; font-weight:bold; font-size:20px; padding-left:50px; padding-top:100px; font-family:'Times New Roman', Times, serif">Technology</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Electric mobility</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:14px; padding-left:50px;">About Mercedes me</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Connect services</div>
+            </div>
+            <div class="col-sm-2">
+                <div style="color:white; font-weight:bold; font-size:20px; padding-left:50px; padding-top:100px; font-family:'Times New Roman', Times, serif">MBFS</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Fair Practice Code</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Corporate Governance Policy</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:50px;">Ombudsman Scheme for NBFS</div>
+            </div>
+            <div class="col-sm-2">
+                <div style="color:white; font-weight:bold; font-size:20px; padding-left:30px; padding-top:100px; font-family:'Times New Roman', Times, serif">About us</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:30px;">Contact</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:30px;">Secretarial <br> Compliance <br> Disclosure</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:30px;">Press Release</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:30px;">Careers</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:30px;">Mercedes-Benz Collection</div>
+                <div class="pt-3" style="color:rgb(187, 187, 187); font-size:15px; padding-left:30px;">Privacy</div>
+            </div>
+        </div>
+        <div style="padding-left:50px; padding-right:50px"><hr style="color:white;"></div>
+        <div class="pt-4" style="color:white; padding-left:50px; font-family:'Times New Roman', Times, serif;  font-size:20px">© 2024. Mercedes-Benz India Pvt. Ltd. All Rights Reserved (provider)    Cookies Data protection</div>
+        <div class="pt-4" style="color:white; padding-left:50px; font-family:'Times New Roman', Times, serif;  font-size:20px">Legal notices Caution - Fraudulent Job Offerings MB Dialogue - T&C Contest T&C</div>
+        <div class="pt-4" style="color:white; padding-left:50px; font-family:'Times New Roman', Times, serif;  font-size:20px">Unlock Desire T&C Pay by link Sustainability Drive Tournament 2024 T&C</div>
+        <div class="pt-5" style="text-align:center "><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/1024px-Mercedes-Logo.svg.png" style="height:50px; width:50px; text-align:center" alt=""></a></div>
+        <div class="pb-5" style="color:white; font-family:'Times New Roman', Times, serif; text-align:center;margin-top:17px">Back to Top</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Finance Calculator</title>
+  <style>
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+
+    .form{
+        
+        box-shadow: 0 4px 8px 0 rgba(0.9, 0, 0, 5.9), 0 6px 20px 0 rgba(0.9, 0, 0, 2.9);
+        border-radius: 20px;
+        backdrop-filter: blur(1);
+      }
+      .form{
+        position: absolute;
+        bottom: 4%;
+        width:75%;
+        height:90%; 
+        left: 5%;
+        right: 5%;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:20px;
+      }
+      .fm{
+        position: relative;
+      }
+      label{
+        color: black;
+        font-size: 15px;
+      }
+      input{
+        padding: 10px;
+        width: 100%;
+        height:35px;
+        margin-top:10px; 
+        font-size:15px;
+        font-weight:bold;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color:whitesmoke;
+        border: none;
+      }
+      select{
+        padding: 10px;
+        width: 101.7%;
+        height:60px;
+        margin-top:15px; 
+        font-size:15px;
+        font-weight:bold;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color:whitesmoke;
+        border: none;
+      }
+      .main{
+        text-align: center;
+        width: 100%;
+        height: 500px;
+      }
+      .main td{
+         width: 33.33%;
+      }
+
+</style>
+  
+</head>
+<body>
+    <div class="fm">
+        <img src="calcularor background.jpg" alt="" style="height:1000px; width:100%;filter: blur(6px);">
+       <div  class="form" >
+       <div  style="margin:50px">
+         <hr style="visibility: hidden;">
+         <div style="text-align:center; font-family:DM Serif Display;color:#BD9831;font-size: 28px;">
+            Car Finance Calculator
+         </div>
+         <hr style="visibility: hidden;">
+         <hr style="color: white;">
+         <hr style="visibility: hidden;">
+         <hr style="visibility: hidden;">
+         <table class="main">
+            <tr>
+                <td>
+                  <div style="background-color: #ffffff; width:90%;padding:5.5px;border-radius:20px">
+                    <img src="glee.avif" alt="" height="230px" width="100%" style="object-fit: cover; border-radius:20px">
+                    <div style="background-color:#f0f0f0;">
+
+                      <p style="text-align: center; font-weight:bold;margin-top:40px; font-size: 28px;">                 
+                        GLE Coupé
+                      </p>
+
+                    </div>
+                    <table style="margin-top:40px;">
+                      <tr>
+                        <td style="border-right: 1px solid black ;">
+                          <img src="engine.png" alt="" width="20%" height="20%"><br>
+                          <span>120kw</span>
+                        </td>
+                        <td style="border-right: 1px solid black ;">
+                          <img src="gasoline-pump.png" alt="" width="20%" height="20%"><br>
+                          <span>Super</span>
+                        </td>
+                        <td>
+                          <img src="automatic-transmission.png" alt="" width="20%" height="20%"><br>
+                          <span>Automatic</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <div style="margin-top:50px; margin-bottom:125px;background-color:#f0f0f0;">
+                      <hr style="visibility: hidden;">
+                      <p>Car Prices</p>
+                      <p style="font-size: 22px; font-weight:bold; ">&#8377; 1,85,00,000.00 </p>
+                      <p>VAT Included</p>
+                      <hr style="visibility: hidden;">
+                    </div>
+                  </div>
+                  
+                </td>
+                <td style="align-items: center;">
+                <div style="margin-left:24px;margin-bottom:140px;">
+                  <hr style="visibility: hidden;">
+                    <div  style="height:400px; width:300px;font-size:14px;font-weight:bold;">
+                      <hr style="visibility: hidden;">
+                      <label for="carCost">Car Cost:</label>
+                      <br>
+                       <input type="number" id="carCost" placeholder="Enter car cost" value="18500000" required readonly>
+                      <br>
+                      <hr style="visibility: hidden;">
+                      
+                  
+                      <label for="downPayment">Down Payment:</label>
+                      <br>
+                      <input type="number" id="downPayment" placeholder="Enter down payment" required>
+                      <br>
+                      <hr style="visibility: hidden;">
+                  
+                      <label for="email">interest rate:</label>
+                      <br>
+                      <input type="number" id="interestRate" placeholder="Enter interest rate" required>
+                      <br>
+                      <hr style="visibility: hidden;">
+                  
+                      <label for="loanTerm">Loan Term (years):</label>
+                      <br>
+                      <select >
+                        <option value="select">select</option>
+                        <option id="loanTerm" value="12">12 months</option>
+                        <option id="loanTerm" value="24">24 months</option>
+                        <option id="loanTerm" value="36">36 months</option>
+                        <option id="loanTerm" value="48">48 months</option>
+                        <option id="loanTerm" value="60">60 months</option>
+                        <option id="loanTerm" value="72">72 months</option>
+                        <option id="loanTerm" value="84">84 months</option>
+                      </select>
+                      <br>
+                      <hr style="visibility: hidden;">
+                      <hr style="visibility: hidden;">
+                  
+                      <hr style="color: white;">
+                      <hr style="visibility: hidden;">
+                      <hr style="visibility: hidden;">
+                     <div style="text-align: center;">
+                       <button onclick="calculatePayment()" style="padding:10px;background-color:palevioletred;border-radius:50px;color:white;font-size:10px;font-weight:bold;width:80%; border:none">Calculate Monthly Payment</button>
+                     </div>
+                     <hr style="visibility: hidden;">
+                  </div>
+                    </td>
+                    <td>
+                      <div style="text-align: center; margin-bottom:140px; font-size:19px">
+                        <p>Monthly Installment</p>
+                        <span style="color: white;">&#8377 <div id="result" style="display: inline;"> 0.0</div></span>
+                        <hr>
+                        <p>Loan Amount</p>
+                        <span style="color: white; font-weight:bold;">&#8377 <div id="loan" style="display: inline;"> 0.0</div></span>
+                        <hr>
+                        <p>Rate of Interest</p>
+                        <span style="color: white; font-weight:bold;">&#8377 <div id="inter" style="display: inline;"> 0.0</div></span>
+                        <hr>
+                      </div>
+                    </td>
+            </tr>
+         </table>
+        
+       </div>
+       <hr style="visibility: hidden;">
+    </div>
+    
+
+
+  <script>
+    function calculatePayment() {
+      const carCost = parseFloat(document.getElementById('carCost').value);
+      const downPayment = parseFloat(document.getElementById('downPayment').value);
+      const loanAmount = carCost - downPayment;
+      const interesttt=parseFloat(document.getElementById('interestRate').value)
+      const interestRate = parseFloat(document.getElementById('interestRate').value) / 100 / 12; // Monthly interest rate
+      const loanTermMonths = parseFloat(document.getElementById('loanTerm').value) ; // Loan term in months
+
+      const monthlyPayment = (loanAmount * interestRate) / (1 - Math.pow(1 + interestRate, -loanTermMonths));
+
+      const resultElement = document.getElementById('result');
+      const loanElement = document.getElementById('loan');
+      const interest=document.getElementById('inter');
+      resultElement.textContent =`${monthlyPayment.toFixed(2)}`
+      loanElement.textContent=`${loanAmount}`
+      interest.textContent=`${interesttt}%`
+    }
+  </script>
+
+</body>
+</html>
